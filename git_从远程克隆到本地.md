@@ -5,7 +5,7 @@
 * 查看项目状态: git status
 * 修改项目
 * 将修改文件提交到本地暂存区：git add file
-* 提交到当前工作空间：git commit -m "修改文件名称"
+* 提交到当前工作空间：git commit -m "修改文件名称" //添加注释
 * 将项目更新到github : git push
 * 更新项目: git pull
 * 查看历史日志：git log
