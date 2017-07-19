@@ -10,3 +10,4 @@
 * 更新项目: git pull
 * 查看历史日志：git log
 * 返回特定版本：git reset id (id为返回的特定版本号)
+* 回复到修改之前：git checkout file
