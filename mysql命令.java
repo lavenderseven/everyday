@@ -32,3 +32,8 @@ select count(distinct t1.msgSign,t1.msgNumber)  from t_msgsigncount t1 where t1.
 SELECT COUNT(*) FROM `t_msgcontent` WHERE create_time between CURDATE()-interval 1 day and CURDATE() ORDER BY `t_msgcontent`.`create_time` DESC//查询昨天的数据
 SELECT * FROM t_msgsigncount WHERE TO_DAYS(create_time) = TO_DAYS(NOW());
 
+跳出mysql命令行:查询结果导出到文件
+[root@SHNHDX63-146 ~]# mysql -h 127.0.0.1 -u root -p XXXX -P 3306 -e "select * from table"  > /tmp/test/txt
+[root@iZ25nvqu9h4Z ~]# mysql -uroot -p883f9c77b482483b8bdc0d54123806fd -e " SELECT msgNumber,msgContent,receive_time,id,imei FROM mklm_admin.t_msgcontent " > ~/export20170913.txt;
+
+
